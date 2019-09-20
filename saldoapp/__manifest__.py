@@ -6,7 +6,7 @@
 
     'description': " Aplicación de saldo - curso odoo",
 
-    'author': "Victor Pincay",
+    'author': "Victor Pincay V.",
     'website': "http://www.next-pro.com",
 
     # Categories can be used to filter modules in modules listing
