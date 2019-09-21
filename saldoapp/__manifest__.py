@@ -21,7 +21,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/templates.xml',
+        'views/views.xml',
         'data/records_movimiento.xml'
     ],
     # only loaded in demonstration mode

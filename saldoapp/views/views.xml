@@ -1,0 +1,30 @@
+<odoo>
+    <!-- VISTA FORMULARIO DE MOVIMIENTO -->
+    <record id="saldoapp.view_form_sa_movimiento" model="ir.ui.view">
+        <field name="name">view.form.sa.movimiento</field>
+        <field name="model">sa.movimiento</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="name"/>
+                <field name="tipo"/>
+                <field name="monto_total"/>
+                <field name="fecha"/>
+                <field name="moneda"/>
+            </form>
+        </field>
+    </record>
+
+    <!-- ACCCION DE VENTAN -->
+    <record id="saldoapp.action_view_sa_movimiento" model="ir.actions.act_window">
+        <field name="name">Lista de modelos</field>
+        <field name="res_model">sa.movimiento</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- APLICACION DE SALDOAPP -->
+    <record id="saldoapp.view_view_sa_movimiento" model="ir.menu">
+        <field name="name">Saldo APP</field>
+        <field name="action" ref="saldoapp.action_view_sa_movimiento"/>
+    </record>
+</odoo>
