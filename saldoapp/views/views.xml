@@ -2,9 +2,9 @@
   <data>
     <!-- explicit list view definition -->
     <!--
-    <record model="ir.ui.view" id="calorias.list">
-      <field name="name">calorias list</field>
-      <field name="model">calorias.calorias</field>
+    <record model="ir.ui.view" id="saldoapp.list">
+      <field name="name">saldoapp list</field>
+      <field name="model">saldoapp.saldoapp</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
@@ -17,18 +17,18 @@
 
     <!-- actions opening views on models -->
     <!--
-    <record model="ir.actions.act_window" id="calorias.action_window">
-      <field name="name">calorias window</field>
-      <field name="res_model">calorias.calorias</field>
+    <record model="ir.actions.act_window" id="saldoapp.action_window">
+      <field name="name">saldoapp window</field>
+      <field name="res_model">saldoapp.saldoapp</field>
       <field name="view_mode">tree,form</field>
     </record>
     -->
 
     <!-- server action to the one above -->
     <!--
-    <record model="ir.actions.server" id="calorias.action_server">
-      <field name="name">calorias server</field>
-      <field name="model_id" ref="model_calorias_calorias"/>
+    <record model="ir.actions.server" id="saldoapp.action_server">
+      <field name="name">saldoapp server</field>
+      <field name="model_id" ref="model_saldoapp_saldoapp"/>
       <field name="state">code</field>
       <field name="code">
         action = {
@@ -42,19 +42,19 @@
 
     <!-- Top menu item -->
     <!--
-    <menuitem name="calorias" id="calorias.menu_root"/>
+    <menuitem name="saldoapp" id="saldoapp.menu_root"/>
     -->
     <!-- menu categories -->
     <!--
-    <menuitem name="Menu 1" id="calorias.menu_1" parent="calorias.menu_root"/>
-    <menuitem name="Menu 2" id="calorias.menu_2" parent="calorias.menu_root"/>
+    <menuitem name="Menu 1" id="saldoapp.menu_1" parent="saldoapp.menu_root"/>
+    <menuitem name="Menu 2" id="saldoapp.menu_2" parent="saldoapp.menu_root"/>
     -->
     <!-- actions -->
     <!--
-    <menuitem name="List" id="calorias.menu_1_list" parent="calorias.menu_1"
-              action="calorias.action_window"/>
-    <menuitem name="Server to list" id="calorias" parent="calorias.menu_2"
-              action="calorias.action_server"/>
+    <menuitem name="List" id="saldoapp.menu_1_list" parent="saldoapp.menu_1"
+              action="saldoapp.action_window"/>
+    <menuitem name="Server to list" id="saldoapp" parent="saldoapp.menu_2"
+              action="saldoapp.action_server"/>
     -->
   </data>
 </odoo>
