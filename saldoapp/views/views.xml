@@ -1,30 +1,55 @@
 <odoo>
-    <!-- VISTA FORMULARIO DE MOVIMIENTO -->
-    <record id="saldoapp.view_form_sa_movimiento" model="ir.ui.view">
-        <field name="name">view.form.sa.movimiento</field>
-        <field name="model">sa.movimiento</field>
-        <field name="priority">1</field>
-        <field name="arch" type="xml">
-            <form>
-                <field name="name"/>
-                <field name="tipo"/>
-                <field name="monto_total"/>
-                <field name="fecha"/>
-                <field name="moneda"/>
-            </form>
-        </field>
-    </record>
 
-    <!-- ACCCION DE VENTAN -->
-    <record id="saldoapp.action_view_sa_movimiento" model="ir.actions.act_window">
-        <field name="name">Lista de modelos</field>
-        <field name="res_model">sa.movimiento</field>
-        <field name="view_mode">tree,form</field>
-    </record>
+  <!--VISTA FORMULARIO MOVIMIENTO-->
+  <record id="saldoapp7.view_form_sa_movimiento" model="ir.ui.view">
+    <field name="name">view.form.sa.movimiento</field>
+    <field name="model">sa.movimiento</field>
+    <field name="priority">1</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group>
+            <group>
+              <field name="name"/>
+              <field name="monto_total"/>
+              <field name="tipo"/>
+            </group>
+            <group>
+              <field name="fecha"/>
+              <field name="moneda"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
-    <!-- APLICACION DE SALDOAPP -->
-    <record id="saldoapp.view_view_sa_movimiento" model="ir.ui.menu">
-        <field name="name">Saldo APP</field>
-        <field name="action" ref="saldoapp.action_view_sa_movimiento"/>
-    </record>
+  <!--VISTA LISTA MOVIMIENTO-->
+  <record id="saldoapp7.view_tree_sa_movimiento" model="ir.ui.view">
+    <field name="name">view.tree.sa.movimiento</field>
+    <field name="model">sa.movimiento</field>
+    <field name="priority">1</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="monto_total"/>
+        <field name="tipo"/>
+        <field name="fecha"/>
+        <field name="moneda"/>
+      </tree>
+    </field>
+  </record>
+
+  <!--ACCIÓN DE VENTANA-->
+  <record id="saldoapp7.action_view_sa_movimimento" model="ir.actions.act_window">
+    <field name="name">Lista de Movimientos</field>
+    <field name="res_model">sa.movimiento</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+
+  <!--APLICACIÓN SALDOAPP-->
+  <record id="saldoapp7.menu_saldoapp" model="ir.ui.menu">
+    <field name="name">Saldo APP</field>
+    <field name="action" ref="saldoapp7.action_view_sa_movimimento"/>
+  </record>
 </odoo>
