@@ -60,17 +60,6 @@
     <field name="action" ref=""/>
   </record>
 
-  <!-- SUBMENU : MOVIMIENTO -->
-  <record id="saldoapp.menu_movimiento" model="ir.ui.menu">
-    <field name="name">Saldo APP</field>
-    <field name="action" ref="saldoapp.action_view_sa_movimimento"/>
-    <field name="parent" ref="saldoapp.menu_saldoapp"/>
-  </record>
-
-  <record id="saldoapp.menu_categoria" model="ir.ui.menu">
-    <field name="name">Saldo APP</field>
-    <field name="action" ref="saldoapp.action_view_sa_categoria"/>
-    <field name="parent" ref="saldoapp.menu_saldoapp"/>
-  </record>
+  
 
 </odoo>
