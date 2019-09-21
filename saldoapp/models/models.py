@@ -11,5 +11,4 @@ class Movimiento(models.Model):
     monto_total = fields.Float(string="Monto")
     tipo = fields.Selection(string="Tipo", selection=[("I","Ingreso"),("E","Egreso")])
     fecha = fields.Date(string="Fecha operación")
-    moneda = fields.Selection(string="Moneda", sekection=[("PEN","Soles"), ("USD","Dolares")])
-    
+    moneda = fields.Selection(string="Moneda", selection=[("PEN","Soles"), ("USD","Dolares")])
