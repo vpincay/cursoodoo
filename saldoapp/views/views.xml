@@ -23,7 +23,7 @@
     </record>
 
     <!-- APLICACION DE SALDOAPP -->
-    <record id="saldoapp.view_view_sa_movimiento" model="ir.menu">
+    <record id="saldoapp.view_view_sa_movimiento" model="ir.ui.menu">
         <field name="name">Saldo APP</field>
         <field name="action" ref="saldoapp.action_view_sa_movimiento"/>
     </record>
