@@ -40,16 +40,37 @@
     </field>
   </record>
 
-  <!--ACCIÓN DE VENTANA-->
+  <!--ACCIÓN DE VENTANA: MOVIMIENTO-->
   <record id="saldoapp.action_view_sa_movimimento" model="ir.actions.act_window">
     <field name="name">Lista de Movimientos</field>
     <field name="res_model">sa.movimiento</field>
     <field name="view_mode">tree,form</field>
   </record>
 
-  <!--APLICACIÓN SALDOAPP-->
+<!--ACCIÓN DE VENTANA: CATEGORIA-->
+  <record id="saldoapp.action_view_sa_categoria" model="ir.actions.act_window">
+    <field name="name">Lista de Categorias</field>
+    <field name="res_model">sa.categoria</field>
+    <field name="view_mode">tree</field>
+  </record>
+
+  <!-- MENU : APLICACIÓN SALDOAPP -->
   <record id="saldoapp.menu_saldoapp" model="ir.ui.menu">
     <field name="name">Saldo APP</field>
-    <field name="action" ref="saldoapp.action_view_sa_movimimento"/>
+    <field name="action" ref=""/>
   </record>
+
+  <!-- SUBMENU : MOVIMIENTO -->
+  <record id="saldoapp.menu_movimiento" model="ir.ui.menu">
+    <field name="name">Saldo APP</field>
+    <field name="action" ref="saldoapp.action_view_sa_movimimento"/>
+    <field name="parent" ref="saldoapp.menu_saldoapp"/>
+  </record>
+
+  <record id="saldoapp.menu_categoria" model="ir.ui.menu">
+    <field name="name">Saldo APP</field>
+    <field name="action" ref="saldoapp.action_view_sa_categoria"/>
+    <field name="parent" ref="saldoapp.menu_saldoapp"/>
+  </record>
+
 </odoo>

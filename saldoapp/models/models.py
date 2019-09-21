@@ -12,3 +12,11 @@ class Movimiento(models.Model):
     tipo = fields.Selection(string="Tipo", selection=[("I","Ingreso"),("E","Egreso")])
     fecha = fields.Date(string="Fecha operación")
     moneda = fields.Selection(string="Moneda", selection=[("PEN","Soles"), ("USD","Dolares")])
+
+class Categoria(models.Model):
+    _name = "sa.categoria"
+    _description = "Categoria"
+
+    nombre = fields.Char(string="Nombre")
+    tipo = fields.Selection(string="Tipo",selection=[("I","Ingreso"),("E","Egreso")])
+    activo = fields.Boolean(string="Activo", default=True)
