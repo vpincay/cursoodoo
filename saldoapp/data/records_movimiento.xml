@@ -1,0 +1,16 @@
+<odoo>
+  <record id="saldoapp.movimiento1" model="sa.movimiento">
+    <field name="name">Comrpa de linea blanca</field>
+    <field name="tipo">E</field>
+    <field name="monto_total">140</field>
+    <field name="fecha">2019/11/12</field>
+    <field name="moneda">PEN</field>
+  </record>
+  <record id="saldoapp.movimiento2" model="sa.movimiento">
+    <field name="name">Comrpa de ERP</field>
+    <field name="tipo">E</field>
+    <field name="monto_total">240</field>
+    <field name="fecha">2019/11/12</field>
+    <field name="moneda">PEN</field>
+  </record>
+</odoo>
