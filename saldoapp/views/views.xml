@@ -56,6 +56,20 @@
     </field>
   </record>
 
+  <!--VISTA LISTA CATEGORIAS-->
+  <record id="saldoapp.view_tree_sa_categoria" model="ir.ui.view">
+    <field name="name">view.tree.sa.categoria</field>
+    <field name="model">sa.categoria</field>
+    <field name="priority">1</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="nombre"/>
+        <field name="puntos"/>
+        <field name="active"/>
+      </tree>
+    </field>
+  </record>
+
   <!--ACCIÓN DE VENTANA: MOVIMIENTO-->
   <record id="saldoapp.action_view_sa_movimimento" model="ir.actions.act_window">
     <field name="name">Lista de Movimientos</field>
