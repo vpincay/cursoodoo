@@ -1,0 +1,20 @@
+<odoo>
+<!-- EGRESOS-->
+    <record id="saldoapp.categoria_casa" model="sa.categoria">
+        <field name="tipo">E</field>
+        <field name="nombre">casa</field>
+    </record>
+    <record id="saldoapp.categoria_carro" model="sa.categoria">
+        <field name="tipo">E</field>
+        <field name="nombre">carro</field>
+    </record>
+<!-- EGRESOS-->
+    <record id="saldoapp.categoria_utilidades" model="sa.categoria">
+        <field name="tipo">I</field>
+        <field name="nombre">Utilidades</field>
+    </record>
+    <record id="saldoapp.categoria_sueldo" model="sa.categoria">
+        <field name="tipo">I</field>
+        <field name="nombre">Sueldo</field>
+    </record>
+</odoo>
