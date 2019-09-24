@@ -30,6 +30,7 @@
             </group>
             <group string = "Adicional">
               <field name="concepto"/>
+              <field name="puntos"/>
               <field name="comprobante" string="Comprobante file" widget="image"/>
             </group>
           </group>
