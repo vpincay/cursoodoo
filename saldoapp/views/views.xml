@@ -26,6 +26,7 @@
             <group>
               <field name="fecha"/>
               <field name="moneda"/>
+              <field name="categoria_id"/>
             </group>
           </group>
         </sheet>
@@ -45,6 +46,7 @@
         <field name="tipo"/>
         <field name="fecha"/>
         <field name="moneda"/>
+        <field name="categoria_id"/>
       </tree>
     </field>
   </record>
