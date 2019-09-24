@@ -46,7 +46,7 @@
     <field name="model">sa.movimiento</field>
     <field name="priority">1</field>
     <field name="arch" type="xml">
-      <tree>
+      <tree decoration-info="tipo=='I'" decoration-warning="tipo=='E'">
         <field name="name"/>
         <field name="monto_total"/>
         <field name="tipo"/>
