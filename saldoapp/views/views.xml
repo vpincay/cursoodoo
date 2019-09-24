@@ -32,6 +32,7 @@
               <field name="concepto"/>
               <field name="puntos"/>
               <field name="comprobante" string="Comprobante file" widget="image"/>
+              <field name="puntos"/>
             </group>
           </group>
         </sheet>
@@ -52,6 +53,7 @@
         <field name="fecha"/>
         <field name="moneda"/>
         <field name="categoria_id"/>
+        <field name="puntos"/>
       </tree>
     </field>
   </record>
