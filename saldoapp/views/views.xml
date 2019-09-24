@@ -26,7 +26,7 @@
             <group>
               <field name="fecha"/>
               <field name="moneda"/>
-              <field name="categoria_id" domain="[['tipo','=','tipo']]" widget="radio"/>
+              <field name="categoria_id" domain="[['tipo','=',tipo]]" widget="radio"/>
             </group>
             <group string = "Adicional">
               <field name="concepto"/>
